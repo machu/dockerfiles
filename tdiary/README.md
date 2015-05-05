@@ -1,5 +1,7 @@
 # machu/tdiary docker image
 
+This image is published on Docker Hub: https://registry.hub.docker.com/u/machu/tdiary/
+
 # How to use this image
 
 ```
