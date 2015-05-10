@@ -16,8 +16,7 @@ RUN bundle --without=development:test:coffee --jobs=4 --retry=3
 # FIXME: id=user pass=user
 COPY dot.htpasswd /usr/src/app/.htpasswd
 
-# FIXME: avoid bug
-RUN rm -f /usr/local/bundle/bundler/gems/tdiary-core-a875dae9543c/lib/tdiary/plugin/90migrate.rb
+COPY tdiary.conf /usr/src/app/tdiary.conf
 
 VOLUME /usr/src/app/data
 EXPOSE 9292
