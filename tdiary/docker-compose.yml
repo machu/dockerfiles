@@ -1,0 +1,6 @@
+app:
+  build: .
+  ports:
+    - "8080:9292"
+  volumes:
+    - ./data:/usr/src/app/data
